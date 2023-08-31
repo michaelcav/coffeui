@@ -53,11 +53,11 @@ export default function CoffeeCard({ item }) {
 
         <View style={{
           backgroundColor: ios ? themeColors.bgDark : 'transparent',
-          shadowColor: themeColors.bgDark,
+          shadowColor: '#000',
           shadowRadius: 25,
           shadowOffset: { width: 0, height: 40 },
           shadowOpacity: 0.8,
-        }} className="flex-row justify-between items-center mb-5">
+        }} className="flex-row justify-between items-center mb-5 shadow-2xl">
           <Text className="text-white font-bold text-lg">$ {item.price}</Text>
           <TouchableOpacity
             onPress={() => navigation.navigate('Product', { ...item })}
